@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
   align-items: center;
+  margin-top: 2.5rem;
+}
+.container{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 80vw;
+  gap: 3rem;
+}
+.crypto-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  border: 1px solid black;
+  padding: 1rem;
+  width: 30%;
+  height: 80%;
+}
+.crypto-name{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.price{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.crypto-card img{
+  width: 50%;
+  height: 50%;
+}
+.crypto-card input{
+  width: 59%;
+  height: 1.4rem;
+  font-size: 1rem;
+}
+.crypto-card button{
+  width: 60%;
+  height: 1.6rem;
+  text-align: center;
+  background-color: black;
   color: white;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.cart{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart-table table{
+  margin-top: 1rem;
+  width: 40rem;
+}
+.cart-table table ,tr ,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.cart-table table td{
+  text-align: center;
+  padding: 0.5rem;
 }
